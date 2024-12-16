@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dto060obsdhr3"]
+
+[ext_resource type="Texture2D" uid="uid://2g3gx41jgq2y" path="res://Assets/Sprites/AA_5.png" id="1_fypmb"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_whbe7"]
+size = Vector2(44.4686, 73.0595)
+
+[node name="NPC" type="StaticBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.28, 0.279999)
+texture = ExtResource("1_fypmb")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(15, 30.403)
+scale = Vector2(2.47365, 1.65353)
+shape = SubResource("RectangleShape2D_whbe7")

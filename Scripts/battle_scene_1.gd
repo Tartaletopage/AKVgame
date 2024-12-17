@@ -50,3 +50,4 @@ func spawn_bullet() -> void:
 	# Передаём направление снаряду
 	if bullet.has_method("initialize"):
 		bullet.initialize(direction)
+#aaaaaaaaaaaaaaaaaaa

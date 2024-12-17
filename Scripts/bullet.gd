@@ -6,6 +6,6 @@ var direction = Vector2.RIGHT
 func _physics_process(delta):
 	position += direction * speed * delta
 	
-
+#sdasd
 func _on_screen_exited() -> void:
 	queue_free()

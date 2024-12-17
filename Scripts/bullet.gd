@@ -1,5 +1,5 @@
 extends Area2D
-
+#IVANGAI
 @export var speed = 100
 var direction = Vector2.RIGHT
 

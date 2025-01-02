@@ -291,6 +291,7 @@ _data = {
 radius = 51.0392
 
 [node name="player" type="CharacterBody2D"]
+z_index = 2
 script = ExtResource("1_li5h4")
 shield_node = NodePath("")
 

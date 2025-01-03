@@ -1,0 +1,52 @@
+[gd_scene load_steps=3 format=3 uid="uid://c1xwjkysagkx6"]
+
+[ext_resource type="Texture2D" uid="uid://ca1igwl5h7op" path="res://Assets/Sprites/RBullet.png" id="1_c7b83"]
+[ext_resource type="Script" path="res://Scripts/minigame.gd" id="1_t02r0"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 300.0
+offset_bottom = 200.0
+script = ExtResource("1_t02r0")
+
+[node name="TimerMG" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[node name="LabelMG" type="Label" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="PanelMG" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 300.0
+offset_bottom = 200.0
+
+[node name="ball" type="TextureButton" parent="PanelMG"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 108.0
+offset_right = 122.0
+offset_bottom = 158.0
+scale = Vector2(0.580124, 0.588273)
+texture_normal = ExtResource("1_c7b83")
+
+[node name="ball2" type="TextureButton" parent="PanelMG"]
+layout_mode = 0
+offset_left = 111.0
+offset_top = 44.0
+offset_right = 161.0
+offset_bottom = 94.0
+scale = Vector2(0.580124, 0.588273)
+texture_normal = ExtResource("1_c7b83")
+
+[node name="ball3" type="TextureButton" parent="PanelMG"]
+layout_mode = 0
+offset_left = 139.0
+offset_top = 88.0
+offset_right = 189.0
+offset_bottom = 138.0
+scale = Vector2(0.580124, 0.588273)
+texture_normal = ExtResource("1_c7b83")

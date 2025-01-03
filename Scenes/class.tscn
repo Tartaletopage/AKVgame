@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://clqntnjn66cgg"]
+[gd_scene load_steps=20 format=3 uid="uid://clqntnjn66cgg"]
 
 [ext_resource type="Texture2D" uid="uid://biqhljk5r8h4s" path="res://Assets/tilesMaps/custom1-2.png" id="1_acp60"]
 [ext_resource type="Texture2D" uid="uid://dqom6xyj4jlkq" path="res://Assets/tilesMaps/park.png" id="2_0l7ao"]
@@ -8,6 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://0h81cvo4ybwp" path="res://Assets/tilesMaps/мед.png" id="6_clv8w"]
 [ext_resource type="PackedScene" uid="uid://bjmnuth2xaha6" path="res://Scenes/player.tscn" id="7_a3l8t"]
 [ext_resource type="Texture2D" uid="uid://lwmg1t1paq4h" path="res://Assets/Sprites/light.png" id="8_dted6"]
+[ext_resource type="PackedScene" uid="uid://vovlw6ls6wub" path="res://Scenes/trigger.tscn" id="9_msdya"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s5bdf"]
 texture = ExtResource("1_acp60")
@@ -1006,7 +1007,12 @@ layer_5/tile_data = PackedInt32Array(0, 2, 0, 65536, 2, 0, 131072, 2, 0, 196608,
 color = Color(0.312304, 0.250806, 0.423755, 1)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(797, 347)
+position = Vector2(526, 664)
 color = Color(0.780392, 0.501961, 0.301961, 0.6)
 texture = ExtResource("8_dted6")
 texture_scale = 3.05
+
+[node name="Trigger" parent="." instance=ExtResource("9_msdya")]
+position = Vector2(1378, 401)
+scale = Vector2(-2.00461, 12.4395)
+NextSceneName = "corridor"

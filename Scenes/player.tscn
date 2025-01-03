@@ -333,10 +333,11 @@ texture_scale = 0.95
 
 [node name="PointLight2D2" type="PointLight2D" parent="."]
 position = Vector2(1, 41)
+
 color = Color(0.780392, 0.380392, 0.568627, 0.513726)
 energy = 1.06
 shadow_enabled = true
+
 shadow_color = Color(0, 0, 0, 0.631373)
-shadow_filter = 1
 shadow_filter_smooth = 34.0
 texture = ExtResource("3_x3r3e")

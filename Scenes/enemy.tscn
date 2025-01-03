@@ -1,20 +1,27 @@
-[gd_scene load_steps=4 format=3 uid="uid://boscmgbgc68w2"]
+[gd_scene load_steps=4 format=3 uid="uid://di8jycy2qxgbu"]
 
-[ext_resource type="PackedScene" uid="uid://dfvcdi7fsbbt0" path="res://Scenes/bullet.tscn" id="2_8wld8"]
-[ext_resource type="Script" path="res://Scripts/enemy.gd" id="2_jdg6m"]
+[ext_resource type="Texture2D" uid="uid://ca1igwl5h7op" path="res://Assets/Sprites/RBullet.png" id="1_aauok"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qchjb"]
+[sub_resource type="GDScript" id="GDScript_53nmd"]
+script/source = "extends Area2D
 
-[node name="enemy" type="CharacterBody2D"]
-script = ExtResource("2_jdg6m")
-bullet_node = ExtResource("2_8wld8")
+
+@export var game_window: Control
+
+func _on_area_entered(body):
+	if body.name == \"player\":
+		game_window.visible = true
+		game_window.start_game()
+"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ht2gi"]
+radius = 59.0085
+
+[node name="Enemy" type="Area2D"]
+script = SubResource("GDScript_53nmd")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.812796, 0.951542, 7.70092e-07, 1)
-position = Vector2(-4.76837e-07, 0.375)
-scale = Vector2(12.5, 11.25)
-texture = SubResource("PlaceholderTexture2D_qchjb")
+texture = ExtResource("1_aauok")
 
-[node name="speed" type="Timer" parent="."]
-wait_time = 0.05
-autostart = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_ht2gi")

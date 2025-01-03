@@ -2,12 +2,12 @@
 
 [ext_resource type="Script" path="res://Scripts/trigger.gd" id="1_sydec"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_uf35v"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erov4"]
 
 [node name="Trigger" type="Area2D"]
 script = ExtResource("1_sydec")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_uf35v")
+shape = SubResource("RectangleShape2D_erov4")
 
 [connection signal="body_entered" from="." to="." method="_on_area_body_entered"]

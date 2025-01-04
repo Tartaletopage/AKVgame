@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://cggqibwv8yy2w"]
+[gd_scene load_steps=21 format=3 uid="uid://cggqibwv8yy2w"]
 
 [ext_resource type="PackedScene" uid="uid://bjmnuth2xaha6" path="res://Scenes/player.tscn" id="1_word4"]
 [ext_resource type="PackedScene" uid="uid://dto060obsdhr3" path="res://Scenes/npc.tscn" id="2_mwi3v"]
@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://br1g6cipklv0u" path="res://Assets/tilesMaps/Крыша.png" id="5_0jrtw"]
 [ext_resource type="PackedScene" uid="uid://vovlw6ls6wub" path="res://Scenes/trigger.tscn" id="5_on6tn"]
 [ext_resource type="Texture2D" uid="uid://cn0xjk6j88nxp" path="res://Assets/tilesMaps/SCHOOL.png" id="6_y8uim"]
+[ext_resource type="PackedScene" uid="uid://cyxe5we3605mc" path="res://Scenes/enemy.tscn" id="12_7mwc6"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_63nm0"]
 texture = ExtResource("3_i3vmy")
@@ -6238,7 +6239,7 @@ dialogue_resource = ExtResource("4_a3fhg")
 shape = SubResource("CircleShape2D_7c8af")
 
 [node name="Trigger" parent="." instance=ExtResource("5_on6tn")]
-position = Vector2(669, 307)
+position = Vector2(910, 260)
 scale = Vector2(5.48, 5.08)
 NextSceneName = "class"
 
@@ -6246,3 +6247,6 @@ NextSceneName = "class"
 
 [node name="TileMap" type="TileMap" parent="Node2D"]
 format = 2
+
+[node name="Enemy" parent="." instance=ExtResource("12_7mwc6")]
+position = Vector2(663, 251)

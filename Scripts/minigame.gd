@@ -75,4 +75,3 @@ func wait_seconds(seconds: float) -> void:
 
 func close_game():
 		queue_free()
-#asd

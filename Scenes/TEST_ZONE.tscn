@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://yvugxrkpk8ci"]
+
+[ext_resource type="PackedScene" uid="uid://bjmnuth2xaha6" path="res://Scenes/player.tscn" id="1_uj23c"]
+[ext_resource type="PackedScene" uid="uid://cyxe5we3605mc" path="res://Scenes/enemy.tscn" id="2_ytp5j"]
+[ext_resource type="PackedScene" uid="uid://c1xwjkysagkx6" path="res://Scenes/Minigame.tscn" id="3_6t3vd"]
+[ext_resource type="PackedScene" uid="uid://vovlw6ls6wub" path="res://Scenes/trigger.tscn" id="3_t4v2o"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="player" parent="." instance=ExtResource("1_uj23c")]
+position = Vector2(220, 119)
+speed = 245
+
+[node name="Camera2D" type="Camera2D" parent="player"]
+position = Vector2(-1, 4)
+
+[node name="Enemy" parent="." instance=ExtResource("2_ytp5j")]
+position = Vector2(539, 184)
+mini_game_scene = ExtResource("3_6t3vd")
+
+[node name="Trigger" parent="." instance=ExtResource("3_t4v2o")]
+position = Vector2(576, 366)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]

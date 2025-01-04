@@ -4,8 +4,7 @@ extends CharacterBody2D
 @onready var animations = $AnimationPlayer
 @onready var previousDirection: String = "down"
 @onready var actionable_finder: Area2D = $direction/ActionableFinder
-@export var shield_node: NodePath = "shield"
-@export var attack_cost: int = 100  
+
 
 
 func _ready():

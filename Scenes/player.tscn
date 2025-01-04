@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bjmnuth2xaha6"]
+[gd_scene load_steps=16 format=3 uid="uid://bjmnuth2xaha6"]
 
 [ext_resource type="Script" path="res://Scripts/player/movment.gd" id="1_li5h4"]
 [ext_resource type="Texture2D" uid="uid://dmidf8t1qibq5" path="res://Assets/animate_sprites/$Murcia_sprite.png" id="2_k6k7k"]
@@ -290,16 +290,12 @@ _data = {
 [sub_resource type="CircleShape2D" id="CircleShape2D_ev2hu"]
 radius = 51.0392
 
-[sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_6xjln"]
-polygon = PackedVector2Array(-38, -11, -10, -27, -8, -47, 5, -54, 11, -42, 23, -42, 30, -28, 35, -19, 43, -5, 46, 16, 46, 30, 35, 47, 30, 62, 21, 72, 3, 71, -14, 70, -25, 68, -33, 61, -37, 53, -40, 41, -44, 24, -45, 12, -46, 0, -43, -8, -40, -11)
-
 [node name="player" type="CharacterBody2D"]
 z_index = 2
 script = ExtResource("1_li5h4")
 shield_node = NodePath("")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-light_mask = 513
 texture = ExtResource("2_k6k7k")
 hframes = 3
 vframes = 4
@@ -325,36 +321,19 @@ visible = false
 position = Vector2(0, 29)
 shape = SubResource("CircleShape2D_ev2hu")
 
-[node name="PointLight2D2" type="PointLight2D" parent="."]
-visible = false
-color = Color(0.782146, 0.381924, 0.569262, 1)
-energy = 1.06
-shadow_color = Color(0, 0, 0, 0.631373)
-shadow_filter = 1
-shadow_filter_smooth = 34.0
-texture = ExtResource("3_x3r3e")
-
 [node name="PointLight2D" type="PointLight2D" parent="."]
-visible = false
 position = Vector2(1, 41)
 color = Color(0.782146, 0.381924, 0.569262, 1)
-
 energy = 0.6
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter = 1
 shadow_filter_smooth = 5.8
-shadow_item_cull_mask = 1025
-
 texture = ExtResource("3_x3r3e")
 texture_scale = 0.95
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-visible = false
-occluder = SubResource("OccluderPolygon2D_6xjln")
-=======
+
+
 [node name="PointLight2D2" type="PointLight2D" parent="."]
 position = Vector2(1, 41)
 color = Color(0.782146, 0.381924, 0.569262, 1)
@@ -362,9 +341,4 @@ energy = 0.9
 shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter_smooth = 34.0
 texture = ExtResource("3_x3r3e")
->>>>>>> upstream/main
-=======
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-visible = false
-occluder = SubResource("OccluderPolygon2D_6xjln")
->>>>>>> 682dad1a266ffa320ef7dcc8ada67eb920225b51
+

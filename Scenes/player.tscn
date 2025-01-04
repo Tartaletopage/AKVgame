@@ -329,12 +329,12 @@ shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter = 1
 shadow_filter_smooth = 5.8
 texture = ExtResource("3_x3r3e")
-texture_scale = 0.95
+texture_scale = 0.8
 
 [node name="PointLight2D2" type="PointLight2D" parent="."]
 position = Vector2(1, 41)
 color = Color(0.782146, 0.381924, 0.569262, 1)
-energy = 0.9
+energy = 0.3
 shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter_smooth = 34.0
 texture = ExtResource("3_x3r3e")

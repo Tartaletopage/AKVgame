@@ -1,4 +1,4 @@
-# ADADADA
+
 extends Node2D
 
 # Ссылка на игрока

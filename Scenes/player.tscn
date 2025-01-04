@@ -324,24 +324,16 @@ shape = SubResource("CircleShape2D_ev2hu")
 [node name="PointLight2D" type="PointLight2D" parent="."]
 position = Vector2(1, 41)
 color = Color(0.782146, 0.381924, 0.569262, 1)
-
 energy = 0.6
 shadow_enabled = true
 shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter = 1
 shadow_filter_smooth = 5.8
-<<<<<<< HEAD
-shadow_item_cull_mask = 1025
-
 texture = ExtResource("3_x3r3e")
 texture_scale = 0.95
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-visible = false
-occluder = SubResource("OccluderPolygon2D_6xjln")
-=======
+
+
 [node name="PointLight2D2" type="PointLight2D" parent="."]
 position = Vector2(1, 41)
 color = Color(0.782146, 0.381924, 0.569262, 1)
@@ -349,23 +341,4 @@ energy = 0.9
 shadow_color = Color(0, 0, 0, 0.631373)
 shadow_filter_smooth = 34.0
 texture = ExtResource("3_x3r3e")
->>>>>>> upstream/main
-=======
-[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-visible = false
-occluder = SubResource("OccluderPolygon2D_6xjln")
->>>>>>> 682dad1a266ffa320ef7dcc8ada67eb920225b51
-=======
-texture = ExtResource("3_x3r3e")
-texture_scale = 0.95
 
-[node name="PointLight2D2" type="PointLight2D" parent="."]
-position = Vector2(1, 41)
-color = Color(0.782146, 0.381924, 0.569262, 1)
-energy = 0.3
-shadow_enabled = true
-shadow_color = Color(0, 0, 0, 0.631373)
-shadow_filter = 1
-shadow_filter_smooth = 34.0
-texture = ExtResource("3_x3r3e")
->>>>>>> parent of fb3e7cd (dfps[dpfd)

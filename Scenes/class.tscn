@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=3 uid="uid://bqmpc81ohy786"]
+[gd_scene load_steps=39 format=3 uid="uid://bqmpc81ohy786"]
 
 [ext_resource type="Texture2D" uid="uid://biqhljk5r8h4s" path="res://Assets/tilesMaps/custom1-2.png" id="1_acp60"]
 [ext_resource type="Texture2D" uid="uid://dqom6xyj4jlkq" path="res://Assets/tilesMaps/park.png" id="2_0l7ao"]
@@ -978,6 +978,36 @@ linear_accel_max = -46.23
 color = Color(0.87451, 0.85098, 0.760784, 0.615686)
 color_ramp = SubResource("GradientTexture1D_wseo1")
 
+[sub_resource type="Gradient" id="Gradient_eux00"]
+interpolation_color_space = 2
+offsets = PackedFloat32Array(0, 0.0746269, 0.149254, 0.261194, 0.522388, 0.723881, 0.835821, 1)
+colors = PackedColorArray(0.00928724, 0.0103789, 0.0209323, 1, 0.178177, 0.143818, 0.16085, 0.829692, 0.231384, 0.292513, 0.351781, 1, 0.407202, 0.322981, 0.335645, 1, 0.807651, 0.545792, 0.594246, 0.627451, 0.826572, 0.658947, 0.677047, 0.627451, 0.882646, 0.87932, 0.898017, 1, 0.925491, 0.918934, 0.823809, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_un14g"]
+gradient = SubResource("Gradient_eux00")
+
+[sub_resource type="Environment" id="Environment_nhndb"]
+background_mode = 3
+tonemap_exposure = 0.83
+tonemap_white = 1.51
+glow_enabled = true
+glow_levels/2 = 4.13
+glow_levels/4 = 4.4
+glow_levels/5 = 5.13
+glow_levels/7 = 0.85
+glow_intensity = 6.11
+glow_strength = 0.6
+glow_bloom = 0.01
+glow_blend_mode = 1
+glow_hdr_threshold = 0.5
+glow_hdr_scale = 1.49
+volumetric_fog_density = 0.085
+adjustment_enabled = true
+adjustment_brightness = 0.99
+adjustment_contrast = 1.17
+adjustment_saturation = 0.58
+adjustment_color_correction = SubResource("GradientTexture1D_un14g")
+
 [node name="Node2D" type="Node2D"]
 y_sort_enabled = true
 
@@ -1075,3 +1105,6 @@ amount = 15
 process_material = SubResource("ParticleProcessMaterial_c8ilm")
 texture = ExtResource("10_ty2jy")
 lifetime = 14.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_nhndb")

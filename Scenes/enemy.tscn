@@ -1,57 +1,20 @@
-[gd_scene load_steps=4 format=3 uid="uid://di8jycy2qxgbu"]
+[gd_scene load_steps=4 format=3 uid="uid://boscmgbgc68w2"]
 
-[ext_resource type="Texture2D" uid="uid://ca1igwl5h7op" path="res://Assets/Sprites/RBullet.png" id="1_aauok"]
+[ext_resource type="PackedScene" uid="uid://dfvcdi7fsbbt0" path="res://Scenes/bullet.tscn" id="2_8wld8"]
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="2_jdg6m"]
 
-[sub_resource type="GDScript" id="GDScript_53nmd"]
-script/source = "extends Area2D
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_qchjb"]
 
-@export var mini_game_scene: PackedScene  
-
-
-
-func _ready():
-	connect(\"body_entered\", Callable(self, \"_on_body_entered\"))
-
-
-func _on_body_entered(body):
-	if body.name == \"player\": 
-		show_mini_game()
-		queue_free()
-
-func show_mini_game():
-	
-	if not mini_game_scene:
-		
-		push_error(\"Сцена мини-игры не указана!\")
-		return
-	var mini_game = mini_game_scene.instantiate()
-	var parent = get_parent()
-	var canvas = parent.get_node(\"CanvasLayer\")
-	canvas.add_child(mini_game)  
-	if mini_game is Control:
-		var viewport_size = get_viewport_rect().size
-		mini_game.size = viewport_size * 0.8
-		mini_game.position = get_viewport().get_visible_rect().size / 2.5
-
-func wait_seconds(seconds: float) -> void:
-	var timer = Timer.new()  
-	add_child(timer)  
-	timer.start(seconds)  
-	await timer.timeout  
-	timer.queue_free()  
-"
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ht2gi"]
-radius = 59.0085
-
-[node name="Enemy" type="Area2D"]
-script = SubResource("GDScript_53nmd")
+[node name="enemy" type="CharacterBody2D"]
+script = ExtResource("2_jdg6m")
+bullet_node = ExtResource("2_8wld8")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_aauok")
+modulate = Color(0.812796, 0.951542, 7.70092e-07, 1)
+position = Vector2(-4.76837e-07, 0.375)
+scale = Vector2(12.5, 11.25)
+texture = SubResource("PlaceholderTexture2D_qchjb")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 0)
-shape = SubResource("CircleShape2D_ht2gi")
-
-[connection signal="area_entered" from="." to="." method="_on_area_entered"]
+[node name="speed" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true

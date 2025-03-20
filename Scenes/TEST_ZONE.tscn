@@ -1,11 +1,11 @@
 [gd_scene load_steps=19 format=3 uid="uid://yvugxrkpk8ci"]
 
 [ext_resource type="PackedScene" uid="uid://bjmnuth2xaha6" path="res://Scenes/player.tscn" id="1_uj23c"]
-[ext_resource type="Script" path="res://Scripts/test_zone.gd" id="1_xuns3"]
+[ext_resource type="Script" uid="uid://bgqh3uns7jqbq" path="res://Scripts/test_zone.gd" id="1_xuns3"]
 [ext_resource type="PackedScene" uid="uid://cyxe5we3605mc" path="res://Scenes/enemy.tscn" id="2_ytp5j"]
 [ext_resource type="PackedScene" uid="uid://c1xwjkysagkx6" path="res://Scenes/Minigame.tscn" id="3_6t3vd"]
 [ext_resource type="PackedScene" uid="uid://vovlw6ls6wub" path="res://Scenes/trigger.tscn" id="3_t4v2o"]
-[ext_resource type="Script" path="res://Scripts/Small_scripts/LightScrp.gd" id="5_e6i17"]
+[ext_resource type="Script" uid="uid://ba66pkp4bj42" path="res://Scripts/Small_scripts/LightScrp.gd" id="5_e6i17"]
 [ext_resource type="Texture2D" uid="uid://c22x8dnbmkd1s" path="res://Assets/Sprites/lampa light.png" id="5_k3xan"]
 [ext_resource type="Texture2D" uid="uid://cn0xjk6j88nxp" path="res://Assets/tilesMaps/SCHOOL.png" id="7_85ayp"]
 [ext_resource type="Texture2D" uid="uid://d0d2u4b1n7f42" path="res://Assets/Sprites/HIL-export.png" id="7_mes5m"]
@@ -43,8 +43,8 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_aa1b5"]
 _data = {
-"RESET": SubResource("Animation_oo8m3"),
-"new_animation": SubResource("Animation_2ee68")
+&"RESET": SubResource("Animation_oo8m3"),
+&"new_animation": SubResource("Animation_2ee68")
 }
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_njvot"]

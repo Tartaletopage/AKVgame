@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=3 uid="uid://bjmnuth2xaha6"]
 
-[ext_resource type="Script" path="res://Scripts/player/movment.gd" id="1_li5h4"]
+[ext_resource type="Script" uid="uid://c03p4xd7yu8v2" path="res://Scripts/player/movment.gd" id="1_li5h4"]
 [ext_resource type="Texture2D" uid="uid://d4nrn13hkt7ku" path="res://Assets/animate_sprites/$Mori_sprite.png" id="2_jjnni"]
 [ext_resource type="Texture2D" uid="uid://lwmg1t1paq4h" path="res://Assets/Sprites/light.png" id="3_x3r3e"]
 
@@ -276,15 +276,15 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_xmmrd"]
 _data = {
-"RESET": SubResource("Animation_tcecv"),
-"idle_down": SubResource("Animation_8lygc"),
-"idle_left": SubResource("Animation_u00vn"),
-"idle_right": SubResource("Animation_7o2hu"),
-"idle_up": SubResource("Animation_ssa7e"),
-"walk_down": SubResource("Animation_m3yw0"),
-"walk_left": SubResource("Animation_o3u3u"),
-"walk_right": SubResource("Animation_udpy6"),
-"walk_up": SubResource("Animation_4bx7y")
+&"RESET": SubResource("Animation_tcecv"),
+&"idle_down": SubResource("Animation_8lygc"),
+&"idle_left": SubResource("Animation_u00vn"),
+&"idle_right": SubResource("Animation_7o2hu"),
+&"idle_up": SubResource("Animation_ssa7e"),
+&"walk_down": SubResource("Animation_m3yw0"),
+&"walk_left": SubResource("Animation_o3u3u"),
+&"walk_right": SubResource("Animation_udpy6"),
+&"walk_up": SubResource("Animation_4bx7y")
 }
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ev2hu"]
@@ -295,6 +295,7 @@ z_index = 2
 script = ExtResource("1_li5h4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.717934, 0.745728, 0.728746, 1)
 texture = ExtResource("2_jjnni")
 hframes = 3
 vframes = 4
@@ -305,7 +306,7 @@ shape = SubResource("RectangleShape2D_0okss")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": SubResource("AnimationLibrary_xmmrd")
+&"": SubResource("AnimationLibrary_xmmrd")
 }
 
 [node name="direction" type="Marker2D" parent="."]

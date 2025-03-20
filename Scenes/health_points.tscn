@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://du4k7ojn02cx0"]
 
 [ext_resource type="Texture2D" uid="uid://d0d2u4b1n7f42" path="res://Assets/Sprites/HIL-export.png" id="1_7kt7x"]
-[ext_resource type="Script" path="res://Scripts/health_points.gd" id="1_uagln"]
+[ext_resource type="Script" uid="uid://bq2y8tjffg2me" path="res://Scripts/health_points.gd" id="1_uagln"]
 
 [sub_resource type="Animation" id="Animation_4c21w"]
 resource_name = "FullHP"
@@ -71,10 +71,10 @@ tracks/0/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7gac6"]
 _data = {
-"FullHP": SubResource("Animation_4c21w"),
-"HalfHP": SubResource("Animation_yjixr"),
-"LowHP": SubResource("Animation_dkkve"),
-"RESET": SubResource("Animation_7h2i7")
+&"FullHP": SubResource("Animation_4c21w"),
+&"HalfHP": SubResource("Animation_yjixr"),
+&"LowHP": SubResource("Animation_dkkve"),
+&"RESET": SubResource("Animation_7h2i7")
 }
 
 [node name="HealthPoints" type="CanvasLayer"]

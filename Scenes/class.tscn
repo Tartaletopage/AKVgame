@@ -257,9 +257,9 @@ polygon = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 texture = ExtResource("3_3nfm8")
 texture_region_size = Vector2i(48, 48)
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_0yt8h")
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_0yt8h")
 1:0/0 = 0
-1:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_djufh")
+1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_djufh")
 2:0/0 = 0
 2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 3:0/0 = 0
@@ -387,10 +387,10 @@ texture_region_size = Vector2i(48, 48)
 13:5/0 = 0
 13:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 8:6/0 = 0
-8:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_wokoy")
+8:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wokoy")
 8:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 9:6/0 = 0
-9:6/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_sf621")
+9:6/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_sf621")
 9:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 13:6/0 = 0
 13:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
@@ -399,10 +399,10 @@ texture_region_size = Vector2i(48, 48)
 15:6/0 = 0
 15:6/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 8:7/0 = 0
-8:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_tcf41")
+8:7/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_tcf41")
 8:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 9:7/0 = 0
-9:7/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_rg5e7")
+9:7/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_rg5e7")
 9:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 13:7/0 = 0
 13:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
@@ -411,7 +411,7 @@ texture_region_size = Vector2i(48, 48)
 15:7/0 = 0
 15:7/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 8:8/0 = 0
-8:8/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_wu52t")
+8:8/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_wu52t")
 8:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 10:8/0 = 0
 10:8/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
@@ -469,7 +469,7 @@ texture_region_size = Vector2i(48, 48)
 7:9/0 = 0
 7:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 8:9/0 = 0
-8:9/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_qwsni")
+8:9/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_qwsni")
 8:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 10:9/0 = 0
 10:9/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
@@ -527,10 +527,10 @@ texture = ExtResource("4_fdvrx")
 texture_region_size = Vector2i(48, 48)
 use_texture_padding = false
 0:0/0 = 0
-0:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_jlcv2")
+0:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_jlcv2")
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 1:0/0 = 0
-1:0/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_74btl")
+1:0/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_74btl")
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-24, -24, 24, -24, 24, 24, -24, 24)
 0:1/0 = 0
 0:2/0 = 0
@@ -595,7 +595,7 @@ use_texture_padding = false
 6:10/size_in_atlas = Vector2i(2, 3)
 6:10/0 = 0
 6:10/0/y_sort_origin = 12
-6:10/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_lyaab")
+6:10/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_lyaab")
 6:10/0/physics_layer_0/polygon_0/points = PackedVector2Array(-37, 24, 36, 24, 36, 72, -37, 72)
 0:10/size_in_atlas = Vector2i(4, 3)
 0:10/0 = 0
@@ -620,7 +620,7 @@ use_texture_padding = false
 9:4/size_in_atlas = Vector2i(4, 2)
 9:4/0 = 0
 9:4/0/y_sort_origin = -12
-9:4/0/occlusion_layer_0/polygon = SubResource("OccluderPolygon2D_fu8jt")
+9:4/0/occlusion_layer_0/polygon_0/polygon = SubResource("OccluderPolygon2D_fu8jt")
 9:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-80, -14, 80, -13, 80, 22.5, 79.5, 25, 74, 48, -65, 48, -72, 48, -74.5, 48, -80, 25, -80, 23)
 13:2/size_in_atlas = Vector2i(2, 2)
 13:2/0 = 0
@@ -1013,7 +1013,7 @@ y_sort_enabled = true
 
 [node name="player" parent="." instance=ExtResource("7_a3l8t")]
 y_sort_enabled = true
-position = Vector2(1054, 314)
+position = Vector2(794, 668)
 speed = 199
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -1057,7 +1057,7 @@ texture_scale = 3.05
 
 [node name="PointLight2D2" type="PointLight2D" parent="."]
 y_sort_enabled = true
-position = Vector2(794.5, 558.5)
+position = Vector2(794.5, 616)
 scale = Vector2(0.806923, 1.00385)
 color = Color(0.796105, 0.728749, 0.668065, 0.92549)
 energy = 0.88
@@ -1066,13 +1066,13 @@ texture = ExtResource("8_dted6")
 texture_scale = 2.6
 
 [node name="PointLight2D3" type="PointLight2D" parent="."]
-position = Vector2(794, 642)
+position = Vector2(794, 839)
 scale = Vector2(7.01637, 7.47768)
 energy = 1.64
 blend_mode = 2
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_weoye")
-texture_scale = 2.1
+texture_scale = 3.06
 
 [node name="PointLight2D4" type="PointLight2D" parent="."]
 position = Vector2(551.625, 291)
@@ -1093,18 +1093,18 @@ z_index = 5
 material = SubResource("CanvasItemMaterial_vmw2p")
 position = Vector2(572, 190)
 amount = 15
-process_material = SubResource("ParticleProcessMaterial_c8ilm")
 texture = ExtResource("10_ty2jy")
 lifetime = 14.0
+process_material = SubResource("ParticleProcessMaterial_c8ilm")
 
 [node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
 z_index = 5
 material = SubResource("CanvasItemMaterial_vmw2p")
 position = Vector2(1027, 205)
 amount = 15
-process_material = SubResource("ParticleProcessMaterial_c8ilm")
 texture = ExtResource("10_ty2jy")
 lifetime = 14.0
+process_material = SubResource("ParticleProcessMaterial_c8ilm")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_nhndb")

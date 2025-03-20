@@ -1193,9 +1193,9 @@ material = SubResource("CanvasItemMaterial_uxuh6")
 position = Vector2(1555, 2379)
 scale = Vector2(0.725, 0.685)
 amount = 100
-process_material = SubResource("ParticleProcessMaterial_bpvcg")
 texture = ExtResource("10_6uqak")
 lifetime = 23.0
+process_material = SubResource("ParticleProcessMaterial_bpvcg")
 
 [node name="GPUParticles2D2" type="GPUParticles2D" parent="."]
 z_index = 1
@@ -1203,9 +1203,9 @@ material = SubResource("CanvasItemMaterial_uxuh6")
 position = Vector2(-173, 2908)
 scale = Vector2(0.725, 0.685)
 amount = 100
-process_material = SubResource("ParticleProcessMaterial_bpvcg")
 texture = ExtResource("10_6uqak")
 lifetime = 23.0
+process_material = SubResource("ParticleProcessMaterial_bpvcg")
 
 [node name="GPUParticles2D3" type="GPUParticles2D" parent="."]
 z_index = 1
@@ -1213,6 +1213,6 @@ material = SubResource("CanvasItemMaterial_uxuh6")
 position = Vector2(3332, 2908)
 scale = Vector2(0.725, 0.685)
 amount = 100
-process_material = SubResource("ParticleProcessMaterial_bpvcg")
 texture = ExtResource("10_6uqak")
 lifetime = 23.0
+process_material = SubResource("ParticleProcessMaterial_bpvcg")

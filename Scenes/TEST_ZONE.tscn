@@ -1149,7 +1149,7 @@ texture = ExtResource("5_k3xan")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Node/PointLight2D"]
 libraries = {
-"": SubResource("AnimationLibrary_aa1b5")
+&"": SubResource("AnimationLibrary_aa1b5")
 }
 speed_scale = 0.721
 

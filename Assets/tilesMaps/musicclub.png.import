@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byybmgridmbcj"
-path="res://.godot/imported/$Sitora_sprite.png-e989451d78a471b0a10683cc006e1300.ctex"
+uid="uid://c44dlh2l7u3vr"
+path="res://.godot/imported/musicclub.png-d995b388a3ee062a3ca616df8363d32e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/animate_sprites/$Sitora_sprite.png"
-dest_files=["res://.godot/imported/$Sitora_sprite.png-e989451d78a471b0a10683cc006e1300.ctex"]
+source_file="res://Assets/tilesMaps/musicclub.png"
+dest_files=["res://.godot/imported/musicclub.png-d995b388a3ee062a3ca616df8363d32e.ctex"]
 
 [params]
 

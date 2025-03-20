@@ -295,7 +295,7 @@ z_index = 2
 script = ExtResource("1_li5h4")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-modulate = Color(0.717934, 0.745728, 0.728746, 1)
+modulate = Color(0.910997, 0.907105, 0.905434, 1)
 texture = ExtResource("2_jjnni")
 hframes = 3
 vframes = 4

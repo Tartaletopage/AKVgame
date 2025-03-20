@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://byybmgridmbcj"
-path="res://.godot/imported/$Sitora_sprite.png-e989451d78a471b0a10683cc006e1300.ctex"
+uid="uid://8wrjnnsf125a"
+path="res://.godot/imported/museclub.png-5669e5784cbb6f5018f7d53b29263fb5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/animate_sprites/$Sitora_sprite.png"
-dest_files=["res://.godot/imported/$Sitora_sprite.png-e989451d78a471b0a10683cc006e1300.ctex"]
+source_file="res://Assets/tilesMaps/museclub.png"
+dest_files=["res://.godot/imported/museclub.png-5669e5784cbb6f5018f7d53b29263fb5.ctex"]
 
 [params]
 
